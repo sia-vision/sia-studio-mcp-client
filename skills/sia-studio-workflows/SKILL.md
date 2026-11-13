@@ -1,0 +1,44 @@
+---
+name: sia-studio-workflows
+description: Create or continue Sia Studio Characters, Locations, Artifacts, Character Looks and Scene-first Productions through the connected MCP account, inspect saved media, and recover original jobs.
+---
+
+Use the existing Sia Studio MCP connection. Start with `workflow_guide_get` for
+the requested workflow, then `account_get` and saved-work search. Reuse the
+Storyworld and exact assets from context; ask only when the destination or intent
+is ambiguous. The guide supplies current tools, permissions and workflow details.
+
+Handle the request in one conversation with sensible creative defaults and brief
+progress. Share actual image previews and retained audition audio or the returned
+Studio viewer link. Inspect the actual media before declaring agent review.
+The saved audition voice and provider-native casting speech are different; explain
+that limitation when sharing a casting preview.
+
+- Character: reuse a saved identity reference, complete missing reference views,
+  choose a provisional voice when needed, and retain the original audition/casting
+  jobs. Preserve an existing identity and voice unless a change was requested.
+- Location: accept text or saved references, establish the visual anchor, then
+  continue layout and lighting views. Label inferred geometry as inferred.
+- Artifact: save a reusable prop, clothing item or accessory, create a design when
+  requested, inspect it, and select the intended reference.
+- Look: combine the exact Character and selected Artifact versions, inspect the
+  generated fit image, and save it. Reuse both ingredients; do not recreate them.
+
+For an incoming image, use the `sia-reference-intake` skill only when this host has
+a supported local file handoff. Otherwise use an existing saved reference or
+Studio's authenticated upload UI. Do not put image bytes/base64 in model arguments,
+read OAuth stores, copy another client's credentials or invent source rights.
+
+Persist operation IDs and exact inputs before mutations. After interruption read
+current state and recover the original request; never automatically buy another
+generation or repeat an uncertain upload. Existing Studio billing applies to
+requested generation; do not add a second quote workflow.
+
+Agent inspection, selected references, completed setup, human approval, canon and
+Production pins are distinct. Changing saved assets must not silently change old
+shots. Finish with saved results, returned Studio links and honest remaining work.
+
+For a Production, request the `production` guide. Start from an inspected Scene,
+choose format once, reuse pinned assets/Looks, and continue Director planning →
+frames → takes → scoped retakes → working cut → exact-output review. Preserve
+earlier cuts and distinguish agent inspection from final creator approval.

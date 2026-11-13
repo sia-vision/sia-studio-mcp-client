@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sia-studio",
+  "version": "0.2.1",
+  "description": "Connect Sia Studio to find saved creative assets, preview images, and work on Storyworlds and Productions you can access.",
+  "author": {
+    "name": "Sia",
+    "url": "https://sia.vision"
+  },
+  "homepage": "https://studio.sia.vision",
+  "repository": "https://github.com/sia-vision/sia-studio-mcp-client",
+  "keywords": [
+    "sia-studio",
+    "characters",
+    "locations",
+    "artifacts",
+    "looks"
+  ],
+  "license": "MIT"
+}
