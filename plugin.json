@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sia-studio",
-  "version": "0.2.1",
-  "description": "Connect Sia Studio to find saved creative assets, preview images, and work on Storyworlds and Productions you can access.",
+  "version": "0.2.2",
+  "description": "Create reusable Sia Studio assets and Scene-first Productions, preview saved media, and review retained takes and cuts.",
   "author": {
     "name": "Sia",
     "url": "https://sia.vision"
@@ -14,7 +14,10 @@
     "characters",
     "locations",
     "artifacts",
-    "looks"
+    "looks",
+    "production",
+    "storyboards",
+    "review"
   ],
   "license": "MIT"
 }

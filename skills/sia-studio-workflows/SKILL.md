@@ -1,9 +1,9 @@
 ---
 name: sia-studio-workflows
-description: Create or continue Sia Studio Characters, Locations, Artifacts, Character Looks and Scene-first Productions through the connected MCP account, inspect saved media, and recover original jobs.
+description: Create or continue SIA Studio Characters, Locations, Artifacts, Character Looks and Scene-first Productions through the connected MCP account, inspect saved media, and recover original jobs.
 ---
 
-Use the existing Sia Studio MCP connection. Start with `workflow_guide_get` for
+Use the existing SIA Studio MCP connection. Start with `workflow_guide_get` for
 the requested workflow, then `account_get` and saved-work search. Reuse the
 Storyworld and exact assets from context; ask only when the destination or intent
 is ambiguous. The guide supplies current tools, permissions and workflow details.
@@ -18,7 +18,9 @@ that limitation when sharing a casting preview.
   choose a provisional voice when needed, and retain the original audition/casting
   jobs. Preserve an existing identity and voice unless a change was requested.
 - Location: accept text or saved references, establish the visual anchor, then
-  continue layout and lighting views. Label inferred geometry as inferred.
+  continue all missing layout and lighting views. Read the current required roles,
+  inspect each saved image, assign the intended role and read back completeness.
+  One establishing image is not a complete Location. Label inferred geometry as inferred.
 - Artifact: save a reusable prop, clothing item or accessory, create a design when
   requested, inspect it, and select the intended reference.
 - Look: combine the exact Character and selected Artifact versions, inspect the
@@ -42,3 +44,21 @@ For a Production, request the `production` guide. Start from an inspected Scene,
 choose format once, reuse pinned assets/Looks, and continue Director planning →
 frames → takes → scoped retakes → working cut → exact-output review. Preserve
 earlier cuts and distinguish agent inspection from final creator approval.
+
+Share previews at meaningful workflow checkpoints using the current guide:
+`reference_image_preview` for identity references, `location_reference_get` for
+Location views, `artifact_image_preview` / `look_image_preview` for reusable
+assets, `character_media_preview` for auditions/casting, and
+`production_media_preview` for each saved frame, retained take and completed cut.
+Compatible MCP Apps hosts show a read-only saved-media card; other clients retain
+native image/audio content or the authenticated Studio link. Do not promise that
+a client supports inline video. Keep the returned shot/take/render URL parameters:
+they open Storyboard, Video or Review at the intended saved work. Previewing is
+separate from reference assignment, take selection and output approval.
+
+Inspect the Director proposal before saving. For a first shot plan, omit
+`basedOnRevision` and `correctionReason`; corrections require both. Read the latest
+Production version between dependent writes. For continuous geography, inspect
+and choose an anchor frame with its preview receipt before generating dependent
+frames with continuity references. A queued dispatch is not completed media;
+poll the original operation and retain earlier takes and cuts.
