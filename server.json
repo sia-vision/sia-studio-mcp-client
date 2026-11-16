@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "vision.sia/studio",
+  "title": "Sia Studio",
+  "description": "Sia Studio: generate images, reuse creative assets, and manage Productions in your workspace.",
+  "version": "0.8.5-2",
+  "websiteUrl": "https://docs.sia.vision",
+  "icons": [
+    {
+      "src": "https://mcp.sia.vision/favicon.png",
+      "mimeType": "image/png",
+      "sizes": ["180x180"]
+    },
+    {
+      "src": "https://mcp.sia.vision/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["64x64"]
+    }
+  ],
+  "remotes": [
+    { "type": "streamable-http", "url": "https://mcp.sia.vision/studio" }
+  ],
+  "repository": {
+    "url": "https://github.com/sia-vision/sia-studio-mcp-client",
+    "source": "github"
+  }
+}

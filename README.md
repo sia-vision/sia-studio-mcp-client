@@ -102,3 +102,12 @@ Registry publication or marketplace submission is implied by this release.
 
 See the [media and recovery guide](https://docs.sia.vision/media-and-recovery) for
 preview fallbacks, interrupted jobs and review boundaries.
+
+
+## Registry metadata
+
+[`server.json`](server.json) records the remote server's public MCP Registry
+metadata, including server name `vision.sia/studio` and this public repository.
+The Registry metadata version is separate from the client package and hosted
+service versions. Official MCP Registry publication and GitHub-verified Copilot
+connector approval are separate review states.
