@@ -71,16 +71,22 @@ This client package is available under the [MIT License](LICENSE).
 
 ## Saved-media previews and Production review
 
-Version **0.2.2** includes guidance for the complete Location and Scene-first
-Production workflows. Start with `workflow_guide_get` for the requested workflow;
-it supplies current tools and state requirements from the hosted server.
+Version **0.2.3** includes guidance for the complete Location and Scene-first
+Production workflows, optional non-destructive 3D staging, prepared shot input
+inspection and exact cut provenance. Start with `workflow_guide_get` for the
+requested workflow; it supplies current tools and state requirements from the
+hosted server.
 
 - Preview Character references, auditions and casting with saved-media tools.
 - Complete and inspect a Location's required establishing, layout and lighting
   roles, keeping inferred layout labelled as inferred.
 - Preview reusable Artifact/Look images before selecting them.
-- Use Director AI to plan coverage from the saved Scene, then inspect starting
-  frames, retained takes and the completed working cut.
+- Use Director AI to plan coverage from the saved Scene, optionally block and
+  preview non-destructive 3D stage studies (`production_stage_*` and
+  `production_stage_media_preview`), inspect prepared shot references
+  (`production_inputs_get`), then inspect starting frames, retained takes and
+  the completed working cut (with deterministic provenance via
+  `production_export_provenance_get`).
 
 Compatible MCP Apps hosts display saved-media cards with images or bounded
 retained audition audio. Cards can show planned shot context and open Studio at
