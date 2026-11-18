@@ -71,34 +71,38 @@ This client package is available under the [MIT License](LICENSE).
 
 ## Saved-media previews and Production review
 
-Version **0.2.3** includes guidance for the complete Location and Scene-first
-Production workflows, optional non-destructive 3D staging, prepared shot input
-inspection and exact cut provenance. Start with `workflow_guide_get` for the
-requested workflow; it supplies current tools and state requirements from the
-hosted server.
+Version **0.2.4** includes guidance for explicit format selection (`16:9`, `1:1`,
+`9:16`), multi-batch non-destructive 3D staging, interactive 3D stage and
+bounded inline video MCP cards, prepared shot input inspection and exact cut
+provenance. Start with `workflow_guide_get` for the requested workflow; it
+supplies current tools and state requirements from the hosted server.
 
 - Preview Character references, auditions and casting with saved-media tools.
 - Complete and inspect a Location's required establishing, layout and lighting
   roles, keeping inferred layout labelled as inferred.
 - Preview reusable Artifact/Look images before selecting them.
-- Use Director AI to plan coverage from the saved Scene, optionally block and
-  preview non-destructive 3D stage studies (`production_stage_*` and
-  `production_stage_media_preview`), inspect prepared shot references
-  (`production_inputs_get`), then inspect starting frames, retained takes and
-  the completed working cut (with deterministic provenance via
-  `production_export_provenance_get`).
+- Choose `aspectRatio` (`16:9` widescreen, `1:1` square/Instagram, or `9:16`
+  vertical/mobile) when starting a Production or standalone generation, use
+  Director AI to plan coverage from the saved Scene, optionally block and
+  preview non-destructive 3D stage studies across full storyboards
+  (`production_stage_*` and `production_stage_media_preview`), inspect prepared
+  shot references (`production_inputs_get`), then inspect starting frames,
+  retained takes and the completed working cut (with deterministic provenance
+  via `production_export_provenance_get`).
 
-Compatible MCP Apps hosts display saved-media cards with images or bounded
-retained audition audio. Cards can show planned shot context and open Studio at
-the relevant stage. Other clients retain native image/audio attachments or the
-returned authenticated Studio link. Host support varies; private video playback
-uses Studio and is not promised inline in chat.
+Compatible MCP Apps hosts display read-only saved-media cards (images, bounded
+retained audition audio and bounded inline video) and interactive 3D stage
+viewports. Cards can show planned shot context and open Studio at the relevant
+stage. Other clients retain native image/audio attachments or the returned
+authenticated Studio link when inline video is oversized or unsupported by the
+host.
 
 Keep the returned `shotId`, `takeId` and `renderId` URL parameters when sharing a
 Production preview. They open the intended shot, retained take or saved cut,
 including historical cut versions. Opening a preview does not select a take,
-rebuild a cut or approve an output. Studio Review keeps picture, cue tracks and
-planned rhythm together; planned timing is distinct from observed footage.
+rebuild a cut or approve an output. Studio Review keeps picture, optional
+side-by-side 3D blocking (**Show 3D**), cue tracks and planned rhythm together;
+planned timing is distinct from observed footage.
 
 The client contains configuration and workflow guidance, not server credentials
 or private creative assets. Its version is independent of the hosted gateway,
