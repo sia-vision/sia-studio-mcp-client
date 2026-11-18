@@ -41,11 +41,13 @@ Production pins are distinct. Changing saved assets must not silently change old
 shots. Finish with saved results, returned Studio links and honest remaining work.
 
 For a Production, request the `production` guide. Start from an inspected Scene,
-choose format once, reuse pinned assets/Looks, and continue Director planning →
-(optional non-destructive 3D staging via `production_stage_*`) → frames → takes →
-scoped retakes → working cut → exact-output review (with deterministic cut
-provenance via `production_export_provenance_get` when needed). Inspect prepared
-shot references and omissions before quoting via `production_inputs_get`, and use
+choose `aspectRatio` once (`16:9` widescreen, `1:1` square/Instagram, or `9:16`
+vertical/mobile; preserve an existing Production's format on updates), reuse
+pinned assets/Looks, and continue Director planning → (optional non-destructive
+3D staging via `production_stage_*`) → frames → takes → scoped retakes → working
+cut → exact-output review (with deterministic cut provenance via
+`production_export_provenance_get` when needed). Inspect prepared shot references
+and omissions before quoting via `production_inputs_get`, and use
 `production_inputs_save` when explicit reference purposes or required pins must
 change within provider limits. Preserve earlier cuts and distinguish agent
 inspection from final creator approval.
@@ -55,11 +57,14 @@ Share previews at meaningful workflow checkpoints using the current guide:
 Location views, `artifact_image_preview` / `look_image_preview` for reusable
 assets, `character_media_preview` for auditions/casting,
 `production_media_preview` for each saved frame, retained take and completed cut,
-and `production_stage_media_preview` for completed 3D stage study frames or
+`production_stage_get` / `production_stage_operation_get` /
+`production_stage_patch_preview` for interactive 3D stage viewports, and
+`production_stage_media_preview` for completed 3D stage study frames or
 blockouts (`pending_client_render` exports render in Studio first).
-Compatible MCP Apps hosts show a read-only saved-media card; other clients retain
-native image/audio content or the authenticated Studio link. Do not promise that
-a client supports inline video. Keep the returned shot/take/render URL parameters:
+Compatible MCP Apps hosts show read-only saved-media cards (images, audio and
+bounded inline video) and interactive 3D stage cards; other clients retain
+native image/audio content or the authenticated Studio link for oversized or
+host-unsupported video. Keep the returned shot/take/render URL parameters:
 they open Storyboard, Video or Review at the intended saved work. Previewing is
 separate from reference assignment, take selection and output approval.
 
