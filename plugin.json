@@ -1,10 +1,10 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sia-studio",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Create reusable Sia Studio assets and Scene-first Productions, preview saved media, and review retained takes and cuts.",
   "author": {
-    "name": "Sia",
+    "name": "Sia Studio",
     "url": "https://sia.vision"
   },
   "homepage": "https://studio.sia.vision",
