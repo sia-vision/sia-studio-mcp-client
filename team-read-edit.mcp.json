@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "sia-studio": {
+      "url": "https://mcp.sia.vision/studio",
+      "headers": {
+        "X-SIA-Studio-Access": "read-edit"
+      }
+    }
+  }
+}

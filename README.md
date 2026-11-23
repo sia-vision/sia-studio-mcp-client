@@ -69,6 +69,12 @@ To verify a connection without changing Studio data, use `workflow_guide_get` wi
 This client package is available under the [MIT License](LICENSE).
 
 
+## Team Read + edit
+
+In Cursor, use the [team MCP preset](./team-read-edit.mcp.json) to update the existing `sia-studio` entry. In Grok Bot, add the HTTP header `X-SIA-Studio-Access` with the value `read-edit` to the remote connector. Both use `https://mcp.sia.vision/studio`.
+
+Reconnect through the client and review the OAuth consent screen. The preset requests reads, Character drafts, asset edits and Production edits together. Studio applies your existing Storyworld permissions. Image, voice and video generation require separate scopes. Clients that expose OAuth scope configuration can use the [Studio setup guide](https://docs.sia.vision/clients#team-read--edit-setup).
+
 ## Saved-media previews and Production review
 
 Version **0.2.6** includes a Cursor marketplace manifest, the bundled Sia Studio logo, and guidance for explicit format selection (`16:9`, `1:1`,
