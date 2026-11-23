@@ -1,0 +1,14 @@
+{
+  "name": "sia-studio",
+  "owner": { "name": "Sia Studio" },
+  "metadata": {
+    "description": "Sia Studio workflows and hosted MCP connection."
+  },
+  "plugins": [
+    {
+      "name": "sia-studio",
+      "source": "./",
+      "category": "Productivity"
+    }
+  ]
+}

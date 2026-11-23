@@ -58,7 +58,7 @@ does not launch a replacement generation or approve an output.
 
 ## Other supported client setup
 
-- **Cursor.** Copy the package, including `.cursor-plugin`, into `~/.cursor/plugins/local/sia-studio` for local testing. Reload Cursor, find `sia-studio` in **Customize**, and authenticate the MCP server with Sia Studio. See [Cursor’s plugin guide](https://cursor.com/docs/plugins).
+- **Cursor.** In **Customize → Plugins → Add → From GitHub Repository**, import this repository and add `sia-studio` from the **Sia Studio** marketplace. Authenticate the MCP server with Sia Studio. For local testing, copy the package, including `.cursor-plugin`, into `~/.cursor/plugins/local/sia-studio` and reload Cursor. See [Cursor’s plugin guide](https://cursor.com/docs/plugins).
 - **Grok Bot.** Open the [Sia community app](https://grok-bot.directory/apps/sia) or use **Connect apps → Add a custom connector → Remote HTTPS**. For manual setup, use `Sia Studio` and the hosted MCP URL above. Complete sign-in and try an existing saved image preview.
 - **ChatGPT and Codex plugin directory.** Sia Studio uses the same hosted endpoint. Directory distribution follows [OpenAI’s plugin ZIP submission process](https://developers.openai.com/plugins/deploy/submission).
 
@@ -71,7 +71,7 @@ This client package is available under the [MIT License](LICENSE).
 
 ## Saved-media previews and Production review
 
-Version **0.2.5** includes the branded Cursor package and guidance for explicit format selection (`16:9`, `1:1`,
+Version **0.2.6** includes a Cursor marketplace manifest, the bundled Sia Studio logo, and guidance for explicit format selection (`16:9`, `1:1`,
 `9:16`), multi-batch non-destructive 3D staging, interactive 3D stage and
 bounded inline video MCP cards, prepared shot input inspection and exact cut
 provenance. Start with `workflow_guide_get` for the requested workflow; it

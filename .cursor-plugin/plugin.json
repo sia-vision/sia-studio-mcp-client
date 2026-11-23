@@ -1,12 +1,12 @@
 {
   "name": "sia-studio",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Sia Studio brings saved creative assets, media previews, and Scene-first Productions into your agent.",
   "author": { "name": "Sia Studio", "url": "https://studio.sia.vision" },
   "homepage": "https://studio.sia.vision",
   "repository": "https://github.com/sia-vision/sia-studio-mcp-client",
   "license": "MIT",
-  "logo": "https://mcp.sia.vision/favicon.png",
+  "logo": "assets/sia-icon.png",
   "skills": ["./skills/sia-studio-workflows"],
   "mcpServers": "./.cursor-plugin/mcp.json"
 }
