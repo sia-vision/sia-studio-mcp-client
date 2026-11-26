@@ -60,7 +60,7 @@ does not launch a replacement generation or approve an output.
 
 - **Cursor.** In **Customize → Plugins → Add → From GitHub Repository**, import this repository and add `sia-studio` from the **Sia Studio** marketplace. Authenticate the MCP server with Sia Studio. For local testing, copy the package, including `.cursor-plugin`, into `~/.cursor/plugins/local/sia-studio` and reload Cursor. See [Cursor’s plugin guide](https://cursor.com/docs/plugins).
 - **Grok Bot.** Open the [Sia community app](https://grok-bot.directory/apps/sia) or use **Connect apps → Add a custom connector → Remote HTTPS**. For manual setup, use `Sia Studio` and the hosted MCP URL above. Complete sign-in and try an existing saved image preview.
-- **ChatGPT and Codex plugin directory.** Sia Studio uses the same hosted endpoint. Directory distribution follows [OpenAI’s plugin ZIP submission process](https://developers.openai.com/plugins/deploy/submission).
+- **ChatGPT and Codex plugin directory.** Open the [public Sia Studio listing](https://chatgpt.com/plugins/plugin_asdk_app_6af647022d048191a3904b03d45bb0b3). The directory package and this repository have their own versions and use the same hosted endpoint.
 
 Each client connects with its own OAuth grant. Review the requested permissions in Sia Studio. Edits require the applicable write permission and Storyworld access. Generation requires its own permission and uses available Studio credits. Manage grants in [Studio Connect](https://studio.sia.vision/dashboard/?tab=connect).
 
@@ -77,7 +77,7 @@ Reconnect through the client and review the OAuth consent screen. The preset req
 
 ## Saved-media previews and Production review
 
-Version **0.2.6** includes a Cursor marketplace manifest, the bundled Sia Studio logo, and guidance for explicit format selection (`16:9`, `1:1`,
+Version **0.2.8** includes a Cursor marketplace manifest, the bundled Sia Studio logo, and guidance for explicit format selection (`16:9`, `1:1`,
 `9:16`), multi-batch non-destructive 3D staging, interactive 3D stage and
 bounded inline video MCP cards, prepared shot input inspection and exact cut
 provenance. Start with `workflow_guide_get` for the requested workflow; it
@@ -108,7 +108,12 @@ Production preview. They open the intended shot, retained take or saved cut,
 including historical cut versions. Opening a preview does not select a take,
 rebuild a cut or approve an output. Studio Review keeps picture, optional
 side-by-side 3D blocking (**Show 3D**), cue tracks and planned rhythm together;
-planned timing is distinct from observed footage.
+planned timing is distinct from observed footage. In Studio, compare 28, 50 and
+85 mm lenses at the same beat, save a framing for Review, then compare it with
+the generated take. To use the picked framing for an xAI retake, open the shot
+in Studio Video. The 3D image and additional pinned asset images are optional.
+**Preview xAI inputs** shows the exact prompt, image order and quote before
+generation. Check picture and sound independently against the rendered cut.
 
 The client contains configuration and workflow guidance, not server credentials
 or private creative assets. Its version is independent of the hosted gateway,

@@ -50,7 +50,11 @@ cut → exact-output review (with deterministic cut provenance via
 and omissions before quoting via `production_inputs_get`, and use
 `production_inputs_save` when explicit reference purposes or required pins must
 change within provider limits. Preserve earlier cuts and distinguish agent
-inspection from final creator approval.
+inspection from final creator approval. For an xAI retake with picked 3D
+framing, open the exact shot in Studio Video. The exact xAI input preview and
+optional 3D or pinned asset images are Studio controls. Inspect the preview
+before making a generation request. Review the rebuilt cut against the exact
+render and verify picture and sound independently.
 
 Share previews at meaningful workflow checkpoints using the current guide:
 `reference_image_preview` for identity references, `location_reference_get` for
